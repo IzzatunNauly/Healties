@@ -1,6 +1,16 @@
 @extends('layouts.main')
 
 @section('content')
+<section class="py-6 pb-9 bg-default">
+   <div class="row justify-content-center text-center">
+     <div class="col-md-6">
+       <h2 class="display-3 text-blue">Sistem Informasi Pengolaan Rumah Sakit</h3>
+         <p class="lead text-mint">
+           Healties 2022
+         </p>
+       </div>
+     </div>
+   </section>
 <div class="auth-wrapper d-flex no-block justify-content-center align-items-center position-relative"
   style="background:url({{ asset('assets/images/big/auth-bg.jpg') }}) no-repeat center center;">
   <div class="auth-box row">
@@ -52,4 +62,12 @@
     </div>
   </div>
 </div>
+  <div class="col-md-12">
+    <div class="credits text-center">
+      <div class="p-3 mb-3 bg-secondary text-white">
+        &copy; 2022 Putri & Izza
+      </div>
+    </div>
+  </div>
 @endsection
+
