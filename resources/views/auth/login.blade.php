@@ -2,15 +2,16 @@
 
 @section('content')
 <section class="py-6 pb-9 bg-default">
+<div class="p-3 mb-3 bg-secondary text-white">
    <div class="row justify-content-center text-center">
      <div class="col-md-6">
-       <h2 class="display-3 text-blue">Sistem Informasi Pengolaan Rumah Sakit</h3>
+       <p class="display-4 text-black">Sistem Informasi Pengolaan Rumah Sakit</p>
          <p class="lead text-mint">
            Healties 2022
          </p>
        </div>
      </div>
-   </section>
+  </section>
 <div class="auth-wrapper d-flex no-block justify-content-center align-items-center position-relative"
   style="background:url({{ asset('assets/images/big/auth-bg.jpg') }}) no-repeat center center;">
   <div class="auth-box row">
@@ -22,7 +23,7 @@
           <img src="{{ asset('assets/images/big/icon.png') }}" alt="wrapkit">
         </div>
         <h2 class="mt-3 text-center">Sign In</h2>
-        <p class="text-center">Enter your email address and password to access admin panel.</p>
+        <p class="text-center">Enter your email address and password</p>
         <form class="mt-4" method="POST" action="{{ route('login') }}">
           @csrf
           <div class="row">
