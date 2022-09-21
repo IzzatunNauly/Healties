@@ -5,7 +5,7 @@
 <div class="p-3 mb-3 bg-secondary text-white">
    <div class="row justify-content-center text-center">
      <div class="col-md-6">
-       <p class="display-4 text-black">Sistem Informasi Pengolaan Rumah Sakit</p>
+       <p class="display-4 text-black">Sistem Informasi Pengelolaan Rumah Sakit</p>
          <p class="lead text-mint">
            Healties 2022
          </p>
