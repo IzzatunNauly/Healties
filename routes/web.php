@@ -7,6 +7,7 @@ use App\Http\Controllers\Admin\PembayaranController;
 use App\Http\Controllers\Admin\RawatInapController;
 use App\Http\Controllers\Admin\RuangController;
 use App\Http\Controllers\Admin\UserController;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -20,6 +21,21 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::get('/config', function () {
+    Artisan::call(
+        'migrate:fresh',
+        [
+            '--force' => true
+        ]
+    );
+    Artisan::call(
+        'db:seed',
+        [
+            '--force' => true
+        ]
+    );
+});
 
 Route::get('/', function () {
     return redirect('login');
