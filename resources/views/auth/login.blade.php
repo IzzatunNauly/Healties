@@ -66,7 +66,7 @@
   <div class="col-md-12">
     <div class="credits text-center">
       <div class="p-3 mb-3 bg-secondary text-white">
-        &copy; 2022 Putri & Izza
+        &copy; 2022 Izza
       </div>
     </div>
   </div>
